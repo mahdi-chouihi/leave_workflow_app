@@ -1,0 +1,73 @@
+.form-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .leave-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust to increase page height */
+    background: url("C:/Users/Imed/Desktop/internship_xxx(5)/leave_workflow/src/app/assets/image.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  mat-form-field {
+    width: 100%; /* Ensure the form field takes up the full width of the container */
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: white; /* Set the background color of the input area to white */
+    border-radius: 4px; /* Ensure the corners are rounded */
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-infix {
+    padding: 0; /* Remove default padding */
+  }
+  
+  input.mat-input-element {
+    padding: 4px 8px; /* Adjust padding to reduce input height */
+    font-size: 14px; /* Decrease font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white; /* Ensure the background color is white */
+  }
+  
+  .mat-form-field-appearance-fill .mat-form-field-outline {
+    border-color: #ccc; /* Border color for the outline variant */
+  }
+  
+  .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    border-color: #ccc; /* Border color for the outline variant */
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

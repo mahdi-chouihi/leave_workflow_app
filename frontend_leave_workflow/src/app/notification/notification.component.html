@@ -1,0 +1,11 @@
+<div class="notifi-box " id="box">
+    <h2>Notifications</h2>
+    <div class="notifi-item" *ngFor="let notification of notifications" (click)="navigateToNotifCard(notification)">
+
+      <div class="text">
+        <h4>{{ notification.lnameEmp  }} {{ notification.fnameEmp }} </h4>
+        <p>I hope this message finds you well. I am writing to formally request leave  from wo...</p>
+      </div> 
+    </div>
+  </div>
+  

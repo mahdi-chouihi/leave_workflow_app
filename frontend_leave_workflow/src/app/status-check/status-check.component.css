@@ -1,0 +1,100 @@
+.tp-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background: url("C:/Users/Imed/Desktop/internship_xxx(5)/leave_workflow/src/app/assets/image.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .tp-box {
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    width: 350px;
+    height: auto;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border: 2px solid #007BFF; /* Blue border */
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .dismiss {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: transparent;
+    border: none;
+    color: #007BFF; /* Blue color matching the border */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .dismiss:hover {
+    color: #0056b3; /* Slightly darker blue on hover */
+  }
+  
+  .name-client {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 20px; /* Reduced size for better fit */
+    color: #333; /* Neutral color for text */
+  }
+  
+  .message {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555; /* Neutral color for the message */
+    line-height: 1.5;
+  }
+  
+  .status {
+    
+    color: black;
+    padding: 0.05rem 0.3rem;
+    border-radius: 5px; /* Less rounded corners */
+    font-weight: 600;
+    margin-left: 0.1rem; /* Spacing between text and the rectangle */
+  }
+  .approved {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .denied {
+    background-color: #f44336; /* Red */
+  }
+  
+  .pending {
+    background-color: #ff9800; /* Orange */
+  }
+  .button-contain {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem; /* Bring button closer to the text */
+  }
+  
+  .accept-button {
+    padding: 12px 30px;
+    background-color: #007BFF; /* Blue color for action button */
+    color: white;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .accept-button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  

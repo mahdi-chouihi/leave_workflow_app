@@ -1,0 +1,33 @@
+<div class="tp-wrapper">
+    <div class="tp-box">
+      <div class="tp-box__side tp-box__front">
+        <div class="button-container">
+          <button type="button" class="dismiss" routerLink="/post-login">×</button>
+        </div>
+        <div class="user-picture">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+          </svg>
+        </div>
+        <p class="name-client">{{nameC}}
+          <span>Employee</span>
+        </p>
+        <div class="name-client"> {{phrase}}
+          <br>{{phrase2}}
+          <br> Thank you for your attention to this matter. </div>
+        <br>
+        <div class="button-contain" >
+        <button *ngIf="!isAccepted && !isDenied" (click)="accept()" class="accept-button">
+          Approve
+        </button>
+
+        
+          <button *ngIf="!isAccepted && !isDenied" (click)="deny()" class="deny-button">
+            Deny
+          </button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>

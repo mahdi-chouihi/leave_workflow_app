@@ -1,0 +1,12 @@
+<div class="post-login-container">
+<div class="post-login-box">
+    <h5> Welcome  {{this.name}} <br> Please choose from the following options</h5>
+    <div class="button-container">
+        <button (click)="navigateToLeaveForm()">Fill Work Leave Request Form</button>
+        <button (click)="navigateToStatusCheck()">Check My Work Leave Request's Status</button>
+      </div>
+  </div>
+</div>
+<app-icon *ngIf="showIcon"></app-icon>
+
+  

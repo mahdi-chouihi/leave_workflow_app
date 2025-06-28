@@ -1,0 +1,71 @@
+.notification-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.notification-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.popup {
+  
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 15px;
+    transition: 1s opacity, 250ms height;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*Roundedcorners*/background-color: #fff;
+/*Backgroundcolor*/border: 2px solid #00A9D4;
+    /*Backgroundcolor*/border: 2px solid #00A9D4;
+    /*Blueborder*/overflow-y: auto;
+    -webkit-transition: 1s opacity, 250ms height;
+    -moz-transition: 1s opacity, 250ms height;
+    -ms-transition: 1s opacity, 250ms height;
+    -o-transition: 1s opacity, 250ms height;
+overflow-y: overlay; /* Show scrollbar overlaying content */
+}
+
+
+.popup::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+.popup::-webkit-scrollbar-track {
+  background: transparent; /* Set the background color of the track */
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Set the color of the scrollbar thumb */
+  border-radius: 4px; /* Set the border-radius of the scrollbar thumb */
+}
+
+/* Ensure the scrollbar is always visible and overlays the content */
+.popup {
+  overflow-y: overlay; /* Show scrollbar overlaying content */
+}
+/* Hide the default scrollbar of Firefox */
+.popup {
+  scrollbar-width: thin; /* Hide Firefox's scrollbar */
+}
+
+/* Adjust scrollbar appearance in Firefox */
+.popup {
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* Set the color of the scrollbar and track */
+}
+/* Hide the arrows on the scrollbar */
+.popup::-webkit-scrollbar-button {
+  display: none;
+}

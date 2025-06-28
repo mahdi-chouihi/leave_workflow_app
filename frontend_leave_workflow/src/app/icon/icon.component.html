@@ -1,0 +1,8 @@
+<div class="notification-container">
+  <button (click)="togglePopup()" class="notification-icon">
+    <i class="fa fa-bell"></i> <!-- You can use any icon library -->
+  </button>
+  <div class="popup" *ngIf="isPopupVisible">
+    <app-notification></app-notification>
+  </div>
+</div>

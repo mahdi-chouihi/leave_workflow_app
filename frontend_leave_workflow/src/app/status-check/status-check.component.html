@@ -1,0 +1,29 @@
+<div class="tp-wrapper">
+    <div class="tp-box">
+        <button type="button" class="dismiss" routerLink="/post-login">×</button>
+      
+        <p class="name-client">{{nameC}}</p>
+        
+        <p >
+            {{period}}
+            <span *ngIf="stat === 'Approved'" class="status approved">{{ stat }}</span>
+            <span *ngIf="stat === 'Denied'" class="status denied">{{ stat }}</span>
+            <span *ngIf="stat === 'Pending'" class="status pending">{{ stat }}</span>
+            <span *ngIf="stat !== 'Approved' && stat !== 'Denied' && stat !== 'Pending'" >you haven't made a request yet</span>.
+        </p>
+        <span *ngIf="stat !== 'Pending'" >
+        <div class="button-contain">
+            <button class="accept-button" routerLink="/post-login">
+                Ok
+            </button>
+        </div>
+    </span>
+    <span *ngIf="stat === 'Pending'" >
+        <div class="button-contain" (click)="handlePending()">
+            <button class="accept-button" >
+                change it!
+            </button>
+        </div>
+    </span>
+    </div>
+</div>
